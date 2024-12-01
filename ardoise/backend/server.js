@@ -8,6 +8,8 @@ const app = express();
 
 app.use(express.json());
 app.use('/api/menus', require('./routes/menuRoutes'));
+app.use('/api/postits', require('./routes/postItRoutes'));
+
 
 const PORT = process.env.PORT || 5000;
 
