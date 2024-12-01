@@ -14,6 +14,7 @@ const menuSchema = mongoose.Schema({
             quantityPerPerson: { type: Number, required: true },
         },
     ],
+    totalPrice: { type: Number, default: 0 },
     createdAt: { type: Date, default: Date.now },
 });
 
